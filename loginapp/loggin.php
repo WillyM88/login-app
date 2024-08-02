@@ -14,6 +14,16 @@
             <li><a href="register.php">Register a new account</a></li>
         </ul>
     </div>
-    
+    <div>
+        <h1>Echo your code here:</h1>
+    </div>
+    <div class="form">
+        <h1>Login Form:</h1>
+        <form action="loggin_confirm.php" method="POST">
+            E-mail: <input type="text" name="email"><br>
+            Password: <input type="text" name="password"><br>
+            <input type="submit"><br>
+        </form>
+    </div>
 </body>
 </html>

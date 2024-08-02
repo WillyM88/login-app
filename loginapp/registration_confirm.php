@@ -1,5 +1,7 @@
 <?php
 
+include 'connection.php';
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -8,7 +10,6 @@ $password = $_POST['password'];
 $pw_length = strlen($password);
 
 // creating the connection:
-$connection = mysqli_connect('localhost', 'root', '', 'loginapp');
 
 // create the query:
 $query = "INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email', '$password')";
